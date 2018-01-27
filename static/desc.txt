@@ -1,1 +1,1 @@
-static html files go here.
+static javascript files go here.
