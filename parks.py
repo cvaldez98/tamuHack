@@ -30,7 +30,4 @@ class parkData():
         return self.outputPark[random.randint(0,len(self.outputPark)-1)]
 
 
-par = parkData()
-test = par.getPark("KY")
-print(test)
 
