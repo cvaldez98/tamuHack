@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 app = Flask(__name__, static_url_path="/static, /static/css")
 import sys
+# import readRestaurantsCSV.py
+import readMuseumCSV.py
+import readPark.py
 
 @app.route('/')
 def index():
