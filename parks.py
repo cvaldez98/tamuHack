@@ -1,15 +1,19 @@
 import csv
 
-ParkName = []
-State = []
-Names = []
-with open("C:/Users/Mannan/Documents/Database/park_visit.csv") as csvDataFile:
-    csvReader = csv.reader(csvDataFile)
-    print(csvReader)
 
-    for row in csvReader:
-        ParkName.append(row[0])
-        State.append(row[3])
+class parksData():
+
+    def __init__(self):
+
+        dictionary = {}
+        widictionary"park_visits.csv") as csvDataFile:
+            csvReader = csv.reader(csvDataFile)
+            for row in csvReader:
+                ParkName.append(row[0])
+                State.append(row[3])
+
+    def getPark(self):
+
 
 #print(State)
 #print(ParkName)

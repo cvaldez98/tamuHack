@@ -1,5 +1,15 @@
 import csv
 
+class museumData():
+
+    def __init__(self):
+
+
+    def getMuseum(self):
+
+
+
+
 def readMyFile(filename):
     city = []
     museumName = []
