@@ -25,8 +25,8 @@ def registerForm():
         resArr=[]
         musArr=[]
         for i in range(0,2):
-            resArr.append(res.getRestraunt(Form.get("City")).title())
-            musArr.append(mus.getMuseum(Form.get("City")).upper())
+            resArr.append(res.getRestraunt(request.form.get("City")).title())
+            musArr.append(mus.getMuseum(request.form.get("City")).upper())
         return str(request.form)
         #return str(dir(request))
     
