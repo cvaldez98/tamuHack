@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 app = Flask(__name__, static_url_path="/static, /static/css")
+import sys
 
 @app.route('/')
 def index():
@@ -13,5 +14,12 @@ def itinerary():
 def result():
     return render_template("result_page.html")
 
+@app.route('/handle-form', methods=['POST'])
+def registerForm():
+    print("Hello")
+    if request.method == 'POST':
+        return str(request.form)
+        #return str(dir(request))
+    return "Nothin'"
 if __name__ == "__main__":
     app.run()
