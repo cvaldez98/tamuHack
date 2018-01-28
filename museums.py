@@ -1,31 +1,37 @@
 import csv
-
+import random
 
 class museumData():
 
     def __init__(self):
-        readMyFile(self, 'museums.csv')
 
-    def readMyFile(self, filename):
-        city = []
-        museumName = []
-        state = []
+        self.city = []
+        self.museumName = []
+        self.state = []
+        self.outputMuseum = []
 
 
-        with open(filename) as csvDataFile:
+        with open("C:/Users/Mannan/Documents/Database/museums.csv") as csvDataFile:
             csvReader = csv.reader(csvDataFile)
             for row in csvReader:
-                museumName.append(row[1])
-                city.append(row[7])
-                state.append(row[8])
+                self.museumName.append(row[1])
+                self.city.append(row[7])
+                self.state.append(row[8])
 
-        return museumName, city, state
+
 
 
 #museumName, city, state = readMyFile('static/museums.csv')
-    def getMuseum(cityName):
-        outputMuseum = []
-        for i in range(0, len(city)):
-            if (city[i] == cityName):  # enter what the user put for their location
-                outputMuseum.append(museumName[i])
-        return outputMuseum
+    def getMuseum(self,cityName):
+
+        for i in range(0, len(self.city)):
+            if (self.city[i] == cityName):  # enter what the user put for their location
+                self.outputMuseum.append(self.museumName[i])
+
+        return self.outputMuseum[random.randint(0,len(self.outputMuseum)-1)]
+
+
+mus = museumData()
+test = mus.getMuseum("ANCHORAGE")
+print(test)
+
