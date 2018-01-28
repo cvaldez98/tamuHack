@@ -1,129 +1,58 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css')}}">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-  <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Simply</title>
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.0/examples/cover/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+    <title>TamuHack</title>
 
-<body>
-  <header>
-    <div class="wrapper">
-        <h1>Simply<span class="color">.</span></h1>
-        <nav>
-          <!-- <ul> -->
-          <!--       <li><a href="#">Home</a></li> -->
-          <!--       <li><a href="#">Portfolio</a></li> -->
-          <!--       <li><a href="#">Contact</a></li> -->
-          <!--       <li><a href="#">Blog</a></li> -->
-          <!--   </ul></nav> -->
-    </header>
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
 
-    <div id="hero-image">
-      <div class="wrapper">
-        <h2><strong>Travel2Do</strong><br/></h2>
-        <a href="/itinerary" class="button-1">Get Started</a>
-        <!-- <a href="#" class="button-1">About Us</a> -->
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='cover.css')}}" rel="stylesheet">
+  </head>
 
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Travel </h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="https://getbootstrap.com/docs/4.0/examples/cover/#">Home</a>
+            <a class="nav-link" href="www.github.com/cvaldez98/tamuHack">Features</a>
+            <a class="nav-link" href="#">Github</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Travel To-do</h1>
+        <p class="lead">Experience. Explore. Discover.</p>
+        <p class="lead">
+          <a href="/itinerary" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Made with love at tamuHack</p>
+        </div>
+      </footer>
     </div>
 
-    <div id="features">
-      <div class="wrapper">
-        <ul>
-            <li class="feature-1">
-                <h4>Explore</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="feature-2">
-                <h4>Discover</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="feature-3">
-                <h4>Experience</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <div class="clear"></div>
-        </ul>
-    </div>
-    </div>
 
-    <div id="primary-content">
-      <<div class="wrapper">
-        <article>
-            <h3>Featured Content</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
-            <a href="#"><img src="static/images/video-placeholder.jpg" alt="video placeholder" /></a>
-        </article>
-    </div>
-    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{url_for('static',filename='jquery-3.2.1.slim.min.js.download')}}"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{{url_for('static',filename='popper.min.js.download')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap.min.js.download')}}"></script>
+  
 
-    <div id="secondary-content">
-      <div class="wrapper">
-        <article style="background-image: url('static/images/article-image-1.jpg');">
-            <div class="overlay">
-                <h4>Secondary Content</h4>
-                <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam.</small></p>
-                <a href="#" class="more-link">View more</a>
-            </div>
-        </article>
-        <article style="background-image: url('static/images/article-image-2.jpg');">
-            <div class="overlay">
-                <h4>Secondary Content</h4>
-                <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam.</small></p>
-                <a href="#" class="more-link">View more</a>
-            </div>
-        </article><div class="clear"></div>
-    </div>
-    </div>
-
-    <div id="cta">
-      <div class="wrapper">
-        <h3>Heard Enough?</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
-        <a href="/itinerary" class="button-2">Get Started</a>
-    </div>
-    </div>
-
-    <footer>
-      <div class="wrapper">
-          <div id="footer-info">
-              <p>Copyright 2014 CompanyName. All rights reserved.</p>
-              <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
-          </div>
-          <div id="footer-links">
-              <ul>
-                  <li><h5>Company</h5></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Meet The Team</a></li>
-                  <li><a href="#">What We Do</a></li>
-                  <li><a href="#">Careers</a></li>
-              </ul>
-              <ul>
-                  <li><h5>Company</h5></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Meet The Team</a></li>
-                  <li><a href="#">What We Do</a></li>
-                  <li><a href="#">Careers</a></li>
-              </ul>
-              <ul>
-                  <li><h5>Company</h5></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Meet The Team</a></li>
-                  <li><a href="#">What We Do</a></li>
-                  <li><a href="#">Careers</a></li>
-              </ul>
-          </div>
-          <div class="clear"></div>
-      </div>
-    </footer>
-
-</body>
-</html>
+</body></html>
