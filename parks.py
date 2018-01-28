@@ -1,31 +1,36 @@
 import csv
+import random
 
-
-class parksData():
+class parkData():
 
     def __init__(self):
 
-        dictionary = {}
-        widictionary"park_visits.csv") as csvDataFile:
+        self.city = []
+        self.parkName = []
+        self.state = []
+        self.outputPark = []
+
+
+        with open("park_visit.csv") as csvDataFile:
             csvReader = csv.reader(csvDataFile)
             for row in csvReader:
-                ParkName.append(row[0])
-                State.append(row[3])
-
-    def getPark(self):
+                self.parkName.append(row[0])
+                self.state.append(row[3])
 
 
-#print(State)
-#print(ParkName)
-def find(s, a):
-    b=False
-    for i in range(0,len(a)):
-        if(s==a[i]):
-            b=True
 
-    return b
-for i in range(0,len(State)):
-    if(State[i]=="KY" and find(ParkName[i],Names)==False):
-        print(ParkName[i])
-        Names.append(ParkName[i])
-        #print(ParkName[row])
+
+#museumName, city, state = readMyFile('static/museums.csv')
+    def getPark(self,stateName):
+
+        for i in range(0, len(self.state)):
+            if (self.state[i] == stateName):  # enter what the user put for their location
+                self.outputPark.append(self.parkName[i])
+
+        return self.outputPark[random.randint(0,len(self.outputPark)-1)]
+
+
+par = parkData()
+test = par.getPark("KY")
+print(test)
+
