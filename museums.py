@@ -11,7 +11,7 @@ class museumData():
         self.outputMuseum = []
 
 
-        with open("C:/Users/Mannan/Documents/Database/museums.csv") as csvDataFile:
+        with open("museums.csv") as csvDataFile:
             csvReader = csv.reader(csvDataFile)
             for row in csvReader:
                 self.museumName.append(row[1])
